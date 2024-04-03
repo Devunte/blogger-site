@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  height: 100%;
+  /* justify-content: space-between; */
+  justify-content: center;
+  /* text-align: center; */
+  align-items: stretch;
+/* border-top-style: double;  
+border-top-width: 10px; */
+border-top: double 10px;
+
+
+}
+
+    
+
+h2 {
+  text-align: left;
+}
+
+section {
+https://file+.vscode-resource.vscode-cdn.net/Users/devuntedawson/bootcamp/blogger-site/100-web-apis-challenge-demo.gif?version%3D1712102870997  padding-left: 4%;
+ 
+  
+}
+.divder {
+  width: 50%;
+border-left: 2px double black;
+  height: 100%;
+  margin: 0 10px;
+}
+input {
+  width: 800px;
+}
+.splitUp{
+  width: 50%;
+  border-right: double 10px;
+  height: 750px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.splitUp h1 {
+  padding-top: 38%;
+  display: inline-block;
+  /* padding: 10px; */
+  background-color: orange;
+  border: 2px solid black; /* Border color and width */
+  border-radius: 50%; /* Makes the shape circular */
+  width: 69%;
+  height: 42%; 
+  padding-left: 30%;
+  background-image: linear-gradient(to top, orange, yellow);
+  /* width: 100%; */
+  /* height: 200%; */
+}
+h1 {
+  padding-left: 40px;
+}
+.split {
+  padding-top: 10%;
+  flex: 1;
+  justify-content: right;
+  padding-left: 10px;
+}
+.split h1 {
+text-align: center;
+}
+
+.large-button {
+  padding: 5px 300px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+}
+
+header .mode
