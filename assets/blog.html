@@ -9,7 +9,7 @@
  <header>
     <h1>My First Blog</h1>
     <button type="switch" onclick="mode">&#127763;</button>
-    <button type="reset" onclick="mode">Back</button>
+    <button type="reset" id="backButton" onclick="mode">Back</button>
 </header>
 <body>
     <div class="Blog-Slots">
@@ -46,7 +46,10 @@
         let outputdata1 = localStorage.getItem("inputData1");
         let outputdata2 = localStorage.getItem("inputData2");
         let outputdata3 = localStorage.getItem("inputData3");
-    </script>
+        document.getElementById('backButton').addEventListener('click', function() {
+    window.history.back();
+});
+        </script>
 
 </body>
 

@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Split Elements Example</title>
-<link rel ="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Elements Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <button type="switch" id="backButton" class="mode">&#127763;</button>
+    </header>
 
-<header>
-    <button type="switch" class="mode">&#127763;</button>
-</header>
-
-<div class="container">
-    <div class="splitUp">
+    <div class="container">
+      <div class="splitUp">
         <h1>My First Blog</h1>
+      </div>
+
+      <div class="split">
+        <h1>Whats On Your Mind?</h1>
+        <section>
+          <h2>username</h2>
+          <input id="textinput1" type="Username"/>
+        </section>
+        <section>
+          <h2>title</h2>
+          <input id="textinput2" type="title"/>
+        </section>
+        <section>
+          <h2>content</h2>
+          <input id="textinput3" type="content"/>
+        </section>
+        <button
+          type="submit" id="buttonClick" class="large-button"  onclick="saveData" >submit</button>
+      </div>
     </div>
+    <script>
+         document.getElementById("buttonClick").addEventListener("click", saveData);
 
-    <div class="split">
-        <h1>Whats On Your Mind</h1>
-     <section>
-        <h2>username</h2>
-        <input id="textinput1" type="username">
-    </section>
-    <section>
-        <h2>title</h2>
-        <input id="textinput2" type="title">
-    </section>
-    <section>
-    <h2>content</h2>
-        <input id="textinput3" type="content">
-    </section>
-    <button type="text"  class="large-button" onclick="getdata">Submit</button>
-    
-    </div>
-</div>
-
-
-
-
-
-<script>
-    function getdata (){
-        let inputData1 = document.getElementById("textInput1").value;
-        let inputData2 = document.getElementById("textInput2").value;
-        let inputData3 = document.getElementById("textInput3").value;
-        localStorage.setItem("inputData1", username)
-        localStorage.setItem("inputData2", title)
-        localStorage.setItem("inputData3", content)
+    function saveData() {
+      let inputData1 = document.getElementById('textinput1');
+      let inputData2 = document.getElementById('textinput2');
+      let inputData3 = document.getElementById('textinput3');
+      localStorage.setItem('inputData1', 'Username')
+      localStorage.setItem('inputData2', 'title');
+      localStorage.setItem('inputData3', 'content');
+      
+      alert("Content saved successfully!");
+      window.location.href = "blog.html"
     }
-</script>
-</body>
-</html>
+    
+      </script>
+  </body> 
+  </html>
