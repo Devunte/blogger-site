@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Split Elements Example</title>
-<link rel ="stylesheet" href="./assets/style.css">
+<link rel ="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,23 +21,34 @@
         <h1>Whats On Your Mind</h1>
      <section>
         <h2>username</h2>
-        <input type="username">
+        <input id="textinput1" type="username">
     </section>
     <section>
         <h2>title</h2>
-        <input type="title">
+        <input id="textinput2" type="title">
     </section>
     <section>
     <h2>content</h2>
-        <input type="content">
+        <input id="textinput3" type="content">
     </section>
-    <button type="submit" class="large-button">Submit</button>
+    <button type="text"  class="large-button" onclick="getdata">Submit</button>
+    
     </div>
 </div>
 
 
 
+
+
+<script>
+    function getdata (){
+        let inputData1 = document.getElementById("textInput1").value;
+        let inputData2 = document.getElementById("textInput2").value;
+        let inputData3 = document.getElementById("textInput3").value;
+        localStorage.setItem("inputData1", username)
+        localStorage.setItem("inputData2", title)
+        localStorage.setItem("inputData3", content)
+    }
+</script>
 </body>
-
-
 </html>
