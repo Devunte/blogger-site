@@ -73,7 +73,7 @@ text-align: center;
   background-color: black;
 }
 
-.dark-mode {
+#dark-mode {
   background-color: #333333;
   color: #ffffff;
 }
