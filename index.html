@@ -41,15 +41,16 @@
       let inputData1 = document.getElementById('textinput1');
       let inputData2 = document.getElementById('textinput2');
       let inputData3 = document.getElementById('textinput3');
-      localStorage.setItem('inputData1', 'Username')
-      localStorage.setItem('inputData2', 'title');
-      localStorage.setItem('inputData3', 'content');
+      localStorage.setItem('username', inputData1.value)
+      localStorage.setItem('title', inputData2.value);
+      localStorage.setItem('content', inputData3.value);
       
       alert("Content saved successfully!");
       window.location.href = "blog.html"
     }
-    document.getElementById('togglebutton').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
+    document.getElementById('togglebutton')
+    .addEventListener('click', function() {
+    document.body.classList.toggle('mode');
 });
 
     

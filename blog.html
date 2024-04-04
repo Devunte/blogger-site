@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Header with 5 Sections</title>
-<link rel ="stylesheet" href="style2.css">
- </head>
- <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header with 5 Sections</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <header>
     <h1>My First Blog</h1>
-    <button type="switch" id="togglebutton" onclick="mode">&#127763;</button>
+    <button type="switch" id="togglebutton">&#127763;</button>
     <button type="reset" id="backButton" onclick="mode">Back</button>
-</header>
-<body>
+  </header>
+  <body>
     <div class="Blog-Slots">
-        <div class="section" id="section1">
-            <h2>Title 1</h2>
-            <h3>Here is my content</h3>
-            <h4></h4>
-        </div>
-        <div class="section" id="section2">
-            <h2>Title 2</h2>
-            <h3>content 2</h3>
-        </div>
-        <div class="section" id="section3">
-            <h2>Title 3</h2>
-            <h3>content 2</h3>
-        </div>
-        <div class="section" id="section4">
-            <h2>Title 4</h2>
-            <h3>content 3</h3>
-        </div>
-        <div class="section" id="section5">
-            <h2>Title 5</h2>
-            <h3>Here is the content</h3>
-        </div>
+      <div class="section" id="section1">
+        <h2>Title 1</h2>
+        <h3>Here is my content</h3>
+      </div>
+      <div class="section" id="section2">
+        <h2>Title 2</h2>
+        <h3>content 2</h3>
+      </div>
+      <div class="section" id="section3">
+        <h2>Title 3</h2>
+        <h3>content 2</h3>
+      </div>
+      <div class="section" id="section4">
+        <h2>Title 4</h2>
+        <h3>content 3</h3>
+      </div>
+      <div class="section" id="section5">
+        <h2>Title 5</h2>
+        <h3>Here is the content</h3>
+      </div>
     </div>
-    
+
     <footer>
-    
-        <h1>By Devunte</h1> 
-    
+      <h1>By Devunte</h1>
+      <ul>
+        <li>username:<span class=" display-username"></span> </li>
+        <li>title: <span class = " display-title"></span></li>
+        <li>content:<span class=" display-content"></span></li>
+      </ul>
     </footer>
 
     <script>
-        let outputdata1 = localStorage.getItem("inputData1");
-        let outputdata2 = localStorage.getItem("inputData2");
-        let outputdata3 = localStorage.getItem("inputData3");
-        document.getElementById('backButton').addEventListener('click', function() {
-    window.history.back();
-});
-document.getElementById('toggleButton').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-});
-        </script>
-
-</body>
-
-
+      let outputdata1 = localStorage.getItem("username");
+      let outputdata2 = localStorage.getItem("title");
+      let outputdata3 = localStorage.getItem("content");
+    document.querySelector('.display-username').textContent=outputdata1
+    document.querySelector('.display-title').textContent=outputdata2
+    document.querySelector('.display-content').textContent=outputdata3
+     
+        document.getElementById("backButton")
+        .addEventListener("click", function () {
+          window.history.back();
+        });
+      document.getElementById("togglebutton")
+        .addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+        });
+    </script>
+  </body>
 </html>
-
-
