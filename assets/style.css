@@ -73,4 +73,7 @@ text-align: center;
   background-color: black;
 }
 
-header .mode
+.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}

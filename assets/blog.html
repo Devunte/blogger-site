@@ -8,7 +8,7 @@
  </head>
  <header>
     <h1>My First Blog</h1>
-    <button type="switch" onclick="mode">&#127763;</button>
+    <button type="switch" id="togglebutton" onclick="mode">&#127763;</button>
     <button type="reset" id="backButton" onclick="mode">Back</button>
 </header>
 <body>
@@ -48,6 +48,9 @@
         let outputdata3 = localStorage.getItem("inputData3");
         document.getElementById('backButton').addEventListener('click', function() {
     window.history.back();
+});
+document.getElementById('toggleButton').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
 });
         </script>
 

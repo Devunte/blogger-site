@@ -56,3 +56,7 @@ button {
     justify-content: space-between;
     align-items: center;
 }
+#dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}

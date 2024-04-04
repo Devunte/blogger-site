@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <button type="switch" id="backButton" class="mode">&#127763;</button>
+      <button type="switch" id="togglebutton" class="mode">&#127763;</button>
     </header>
 
     <div class="container">
@@ -48,6 +48,10 @@
       alert("Content saved successfully!");
       window.location.href = "blog.html"
     }
+    document.getElementById('toggleButton').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+
     
       </script>
   </body> 
